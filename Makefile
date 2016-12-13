@@ -34,7 +34,7 @@ fftw:
 	fi; \
 	cd $(ext_dir); \
 	if [ ! -f "$(fftw_file)" ]; then \
-	    wget https://raw.githubusercontent.com/ochubar/SRW/master/ext_lib/$(fftw_file); \
+	    wget --no-check-certificate https://raw.githubusercontent.com/ochubar/SRW/master/ext_lib/$(fftw_file); \
 	fi; \
 	if [ -d "$(fftw_dir)" ]; then \
 	    rm -rf $(fftw_dir); \
